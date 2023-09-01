@@ -1,3 +1,7 @@
+.image-logo {
+    width: 50%;
+  }
+
 nav.navbar {
     padding: 18px 0;
     position: fixed;
@@ -171,6 +175,3 @@ nav.navbar {
       border-color: transparent;
   }
 
-  .image-logo {
-    width: 90%;
-  }
