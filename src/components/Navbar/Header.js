@@ -29,7 +29,7 @@ function Header() {
     <Navbar expand="lg" className={isScrolled ? "scrolled" : ""}>
         <Container>
             <Navbar.Brand href="#home">
-                <img src={logo} alt='Logo' />
+                <img className="image-logo" src={logo} alt='Logo' />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
                 <span className='navbar-toggler-icon'></span>
@@ -46,8 +46,9 @@ function Header() {
                         <a href='#'><img src={navIcon2} alt='' /></a>
                         <a href='#'><img src={navIcon3} alt='' /></a>
                     </div>
+                    <button className='buttonConnect' onClick={() => {console.log("working!")}}><span>Entre em contato!</span></button>
                 </span>
-                <button className='vvd' onClick={() => {console.log("working!")}}><span>Entre em contato!</span></button>
+                
             </Navbar.Collapse>
         </Container>
     </Navbar>
