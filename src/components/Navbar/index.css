@@ -78,6 +78,7 @@ nav.navbar {
   }
 
   .navbar-text button {
+    border-radius: 10px;
     font-weight: 700;
     color: #fff;
     border: 1px solid #fff;
@@ -94,6 +95,7 @@ nav.navbar {
   }
 
   .navbar-text button::before {
+    border-radius: 12px;
     content: "";
     width: 0%;
     height: 100%;
