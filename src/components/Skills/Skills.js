@@ -5,6 +5,7 @@ import meter1 from '../../assets/img/meter1.png'
 import meter2 from '../../assets/img/meter2.png'
 import meter3 from '../../assets/img/meter3.png'
 import './skills.css'
+import gradient from '../../assets/img/Gradient.png'
 
 
 function Skills () {
@@ -28,14 +29,14 @@ function Skills () {
 
 
       return (
-      <section className="skill" id="skills">
+      <section className="skill" id="habilidades">
         <Container>
             <Row>
                 <Col>
                     <div className="skill-box">
                         <h2 className="stacks-title">Habilidades</h2>
                         <p>Algumas das ferramentas que aprendi a utilizar durante minha jornada como desenvolvedor web.</p>
-                        <Carousel responsive={responsive} infinite={true} className="skill-slider"> 
+                        <Carousel responsive={responsive} infinite={true} className="skill-slider custom-carousel-transition"> 
                             <div className="item">
                                 <img src={meter3} alt="Image" className="imageMeter" /> 
                                 <h5 className="Stacks">React</h5>
@@ -61,6 +62,7 @@ function Skills () {
                 </Col>
             </Row>
         </Container>
+        
       </section>
       )
 }

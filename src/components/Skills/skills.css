@@ -1,26 +1,62 @@
-
-#skills {
-    background-color: #121212;
-    font-family: 'Centra';
-}
-
-.item {
+.skill {
+    padding: 0 0 50px 0;
     position: relative;
-    left: 108px
 }
 
-.imageMeter{
-    width: 40%;
+#habilidades {
+    background-color: #121212;
 }
 
-h5 {
+.skill-box {
+    background-color: #151515;
+    border-radius: 64px;
+    text-align: center;
+    padding: 80px 70px;
+    margin-top:  -60px;
+}
+
+h2, .stacks-title {
     color: white;
-}
-
-.stacks-title{
-    color: white;
+    font-family: 'Centra';
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
 p {
-    color: #B8B8B8;
+   color: #B8B8B8;
+   font-weight: 500;
+   font-family: 'Centra';
+   font-size: 18px;
+   letter-spacing: 0.8px;
+   line-height: 14px;
 }
+
+.Stacks {
+    margin-top: 20px;
+    color: white;
+    font-family: 'Centra';
+    font-weight: 500;
+}
+
+.background-image-left {
+    width: 32%;
+    position: absolute;
+    left: -240px;
+    opacity: 9%;
+    top:28%;
+    z-index: 45;
+}
+
+.item {
+    margin-top: 50px;
+    width: 50%;
+    margin-left: 96px;
+}
+
+.skill-slider {
+    margin: 0 auto;
+    position: relative;
+    transition: 2s;
+}
+
