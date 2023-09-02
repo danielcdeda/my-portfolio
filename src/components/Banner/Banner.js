@@ -47,7 +47,7 @@ function Banner() {
         <section className="banner" id="home">
             <Container className="align-items-center">
                 <Row>
-                    <Col xs={12} md={6} xl={7}>
+                    <Col xs={12} md={6} xl={7} className="parte-texto">
                         <h1 className="heading">{'Olá, eu sou Daniel! '}<span>{text}</span></h1>
                         <p>Meu trabalho é desenvolver sites que proporcionam uma ótima experiência para os usuários c: </p>
                         <button onClick={() => console.log('connect')}>Fale comigo! <ArrowRightCircle size={25} /></button>
