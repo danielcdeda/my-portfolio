@@ -6,11 +6,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    font-family: Centra;
   }
 
 .parte-texto {
   position: relative;
-  top: 40px
+  top: 40px;
+  font-weight: 400;
 }
 
 .banner-img {

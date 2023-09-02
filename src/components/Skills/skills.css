@@ -1,0 +1,26 @@
+
+#skills {
+    background-color: #121212;
+    font-family: 'Centra';
+}
+
+.item {
+    position: relative;
+    left: 108px
+}
+
+.imageMeter{
+    width: 40%;
+}
+
+h5 {
+    color: white;
+}
+
+.stacks-title{
+    color: white;
+}
+
+p {
+    color: #B8B8B8;
+}
