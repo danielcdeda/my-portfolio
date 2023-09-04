@@ -60,13 +60,18 @@
 }
 
 .container-projetos {
+    display: flex;
     margin-top: 30px;
-    display: grid;
-    justify-content: space-between;
 }
 
-.h3-projetos {
-    display: inline;
-    justify-content: end;
+.imagem {
+    display: inline-block;
+    margin: 10px;
+}
+
+.texto {
+    font-family: 'Centra';
+    display: inline-block;
     color: white;
+    float: right;
 }

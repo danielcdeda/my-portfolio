@@ -46,12 +46,11 @@ function Projects() {
                         <Tab.Content>
                             <div className="container-projetos">
                                 <Tab.Pane eventKey='first' className="tab-pane active">
-                                    <div className="container-img-projeto1">
+                                    <div className="imagem">
                                         <img src={imagemProj1} className="imagensProj" />
                                     </div>
-                                    <div></div>
-                                    <div>
-                                        <h3 className="h3-projetos">Item 1</h3>
+                                    <div className="texto">
+                                        <h3 >Item 1</h3>
                                     </div>
                                 </Tab.Pane>
                             </div>
