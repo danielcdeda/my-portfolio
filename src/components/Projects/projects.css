@@ -1,0 +1,59 @@
+.projetos {
+    background-color: #000;
+    height: 92vh;
+    position: relative;
+}
+
+.projetos-box{
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo-projetos{
+    margin-top: 30px;
+    color: white;
+    font-family: 'Centra';
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.texto-projetos {
+    margin-bottom: 60px;
+    color: #B8B8B8;
+   font-weight: 500;
+   font-family: 'Centra';
+   font-size: 18px;
+   letter-spacing: 0.8px;
+   line-height: 14px;
+} 
+
+.tabs {
+    position: relative;
+    border-bottom: none !important;
+    width: 88%;
+    margin: 0 auto; /* Isso centraliza horizontalmente */
+}
+
+.personalizar-tab {
+    font-family: 'Centra';
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    color: #fff !important; /* Cor do texto das guias */
+    border-radius: 50px !important; /* Borda arredondada nas guias */
+    padding: 10px 20px; /* Espaçamento interno nas guias */
+    margin-right: 10px; /* Espaçamento entre guias */
+}
+
+/* Estilos para a guia ativa (guia atualmente selecionada) */
+.personalizar-tab.active {
+    background-image: linear-gradient(to right, #fdc500, #ff7740, #d93a6b, #842d7d); 
+    opacity: 90%;/* Cor de fundo das guias ativas */
+}
+
+
+.imagemProj1 {
+    width: 518px;
+    height: 380px;
+    border-radius: 5px;
+}
