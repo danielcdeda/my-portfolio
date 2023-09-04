@@ -52,8 +52,21 @@
 }
 
 
-.imagemProj1 {
-    width: 518px;
-    height: 380px;
-    border-radius: 5px;
+.imagensProj {
+    border-top: 30px;
+    width: 318px;
+    height: 280px;
+    border-radius: 45px;
+}
+
+.container-projetos {
+    margin-top: 30px;
+    display: grid;
+    justify-content: space-between;
+}
+
+.h3-projetos {
+    display: inline;
+    justify-content: end;
+    color: white;
 }

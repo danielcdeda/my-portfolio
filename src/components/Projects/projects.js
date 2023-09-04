@@ -1,6 +1,6 @@
-import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
+import { Container, Row, Col, Nav, Tab, Tabs } from "react-bootstrap";
 import './projects.css'
-import imagemProj1 from "../../assets/img/project-img1.png"
+import imagemProj1 from "../../assets/img/Imagem-Projeto2.png"
 
 
 function Projects() {
@@ -43,33 +43,41 @@ function Projects() {
                                 <Nav.Link eventKey="third" className="personalizar-tab">Tab 3</Nav.Link>
                             </Nav.Item>
                             </Nav>
-                        </Tab.Container>
                         <Tab.Content>
-                            <Tab.Pane eventKey='first' className="tab-pane active">
-                                <div className="container-projeto">
-                                    <img src={imagemProj1} />
-                                    <h3>
-                                        ASDASDasdASD
-                                    </h3>
-                                </div>
-                            </Tab.Pane>
-                            <Tab.Pane eventKey='second'>
-                                <div className="container-projeto">
-                                    <img src={imagemProj1} />
-                                    <h3>
-                                        
-                                    </h3>
-                                </div>
-                            </Tab.Pane>
-                            <Tab.Pane eventKey='third'>
-                                <div className="container-projeto">
-                                    <img src={imagemProj1} />
-                                    <h3>
-                                        
-                                    </h3>
-                                </div>
-                            </Tab.Pane>
+                            <div className="container-projetos">
+                                <Tab.Pane eventKey='first' className="tab-pane active">
+                                    <div className="container-img-projeto1">
+                                        <img src={imagemProj1} className="imagensProj" />
+                                    </div>
+                                    <div></div>
+                                    <div>
+                                        <h3 className="h3-projetos">Item 1</h3>
+                                    </div>
+                                </Tab.Pane>
+                            </div>
+                                <Tab.Pane eventKey='second'>
+                                    <div className="container-img-projeto2">
+                                        <img src={imagemProj1} className="imagensProj" />
+                                    </div>
+                                    <div className="container-texto-projeto2">
+                                        <h3 >
+                                            
+                                        </h3>
+                                    </div>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey='third'>
+                                    <div className="container-img-projeto3">
+                                        <img src={imagemProj1} className="imagensProj" />
+                                    </div>
+                                    <div className="container-texto-projeto3">
+                                        <h3>
+                                            Paoksepokaspoe
+                                        </h3>
+                                    </div>
+                                </Tab.Pane>
+                            
                         </Tab.Content>
+                    </Tab.Container>
                     </div>
                 </Col>
             </Row>
