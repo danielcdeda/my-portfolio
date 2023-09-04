@@ -50,7 +50,8 @@ function Projects() {
                                         <img src={imagemProj1} className="imagensProj" />
                                     </div>
                                     <div className="texto">
-                                        <h3 >Item 1</h3>
+                                        <h3 className="itemh3" >Keeper App</h3>
+                                        <p> Aplicativo utilizado para</p>
                                     </div>
                                 </Tab.Pane>
                             </div>
