@@ -2,6 +2,8 @@ import { Container, Row, Col, Nav, Tab, Tabs } from "react-bootstrap";
 import './projects.css'
 import imagemProj1 from "../../assets/img/Imagem_Projeto1 (2).png"
 import imagemProj2 from "../../assets/img/Imagem-Projeto2.png"
+import imagemProj3 from "../../assets/img/Imagem-Projeto3.png"
+import imagemProj4 from "../../assets/img/Imagem-Projeto4.png"
 import iconCode from "../../assets/img/icon-code.png"
 
 
@@ -17,12 +19,24 @@ function Projects() {
         tecnologia: 'Tecnologias utilizadas: React, CSS, HTML.'
     },
     {
-        title: '',
-        content:'',
+        title: 'Submit Form',
+        content:'Projeto prático para utilização de funções básicas do React como UseState em formulários.',
+        tecnologia: 'Tecnologias utilizadas: React, CSS, HTML.'
     },
     {
-        title: '',
-        content:'',
+        title: 'Jump, Peter!',
+        content:'Jogo para navegador com animações simples.',
+        tecnologia: 'Tecnologias utilizadas: JavaScript, CSS, HTML.'
+    },
+    {
+        title: 'To do List',
+        content:'Aplicativo para registrar seus afazeres diários.',
+        tecnologia: 'Tecnologias utilizadas: React, CSS, HTML.'
+    },
+    {
+        title: 'To do List',
+        content:'Aplicativo para registrar seus afazeres diários.',
+        tecnologia: 'Tecnologias utilizadas: React, CSS, HTML.'
     },
 ] 
     
@@ -48,8 +62,7 @@ function Projects() {
                             </Nav.Item>
                             </Nav>
                         <Tab.Content>
-                            <div className="container-projetos">
-                                <Tab.Pane eventKey='first' className="tab-pane active">
+                                <Tab.Pane eventKey='first'>
                                 <div className="container-projeto1">
                                     <div className="imagem">
                                         <img src={imagemProj1} className="imagensProj" />
@@ -64,7 +77,8 @@ function Projects() {
                                         </div>
                                     </div>
                                 </div>
-                                    <div className="imagem imagem2">
+                                <div className="container-projeto2">
+                                    <div className="imagem2">
                                         <img src={imagemProj2} className="imagensProj" />
                                     </div>
                                     <div className="texto texto2">
@@ -75,38 +89,40 @@ function Projects() {
                                         <p>{projetos[1].tecnologia}</p>
                                         <div className="iconCode">
                                         <a target="_blank" href="https://codesandbox.io/s/es6-spread-operator-practice-forked-zs99yl"><img  src={iconCode} /></a>
-                                        </div>
-                                    </div>
-                                </Tab.Pane>
-                            </div>
-                                <Tab.Pane eventKey='second'>
-                                <div className="container-projeto2">
-                                    <div className="imagem">
-                                        <img src={imagemProj1} className="imagensProj" />
-                                    </div>
-                                    <div className="texto">
-                                        <h3 className="itemh3" >{projetos[0].title}</h3>
-                                        <div className="gradient" />
-                                        <p>{projetos[0].content}</p>
-                                        <p>{projetos[0].tecnologia}</p>
-                                        <div className="iconCode">
-                                        <a target="_blank" href="https://codesandbox.io/s/using-pre-built-react-components-forked-hc9l5w"><img  src={iconCode}/></a>
                                         </div>
                                     </div>
                                 </div>
-                                    <div className="imagem imagem2">
-                                        <img src={imagemProj2} className="imagensProj" />
+                                </Tab.Pane>
+                                <Tab.Pane eventKey='second'>
+                                <div className="container-projeto1">
+                                    <div className="imagem">
+                                        <img src={imagemProj3} className="imagensProj" />
                                     </div>
-                                    <div className="texto texto2">
-                                        <h3 className="itemh3" >{projetos[1].title}</h3>
+                                    <div className="texto">
+                                        <h3 className="itemh3" >{projetos[2].title}</h3>
                                         <div className="gradient" />
-                                        <p> {projetos[1].content}</p>
-                                        
-                                        <p>{projetos[1].tecnologia}</p>
+                                        <p>{projetos[2].content}</p>
+                                        <p>{projetos[2].tecnologia}</p>
                                         <div className="iconCode">
-                                        <a target="_blank" href="https://codesandbox.io/s/es6-spread-operator-practice-forked-zs99yl"><img  src={iconCode} /></a>
+                                        <a target="_blank" href="https://codesandbox.io/s/changing-complex-state-practice-forked-k3yt3q"><img  src={iconCode}/></a>
                                         </div>
                                     </div>
+                                </div>
+                                <div className="container-projeto2">
+                                    <div className="imagem2">
+                                        <img src={imagemProj4} className="imagensProj" />
+                                    </div>
+                                    <div className="texto texto2">
+                                        <h3 className="itemh3" >{projetos[3].title}</h3>
+                                        <div className="gradient" />
+                                        <p> {projetos[3].content}</p>
+                                        
+                                        <p>{projetos[3].tecnologia}</p>
+                                        <div className="iconCode">
+                                        <a target="_blank" href="https://github.com/danielcdeda/Mario-Game"><img  src={iconCode} /></a>
+                                        </div>
+                                    </div>
+                                </div>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey='third'>
                                 <div className="container-projeto1">
@@ -123,7 +139,8 @@ function Projects() {
                                         </div>
                                     </div>
                                 </div>
-                                    <div className="imagem imagem2">
+                                <div className="container-projeto2">
+                                    <div className="imagem2">
                                         <img src={imagemProj2} className="imagensProj" />
                                     </div>
                                     <div className="texto texto2">
@@ -136,6 +153,7 @@ function Projects() {
                                         <a target="_blank" href="https://codesandbox.io/s/es6-spread-operator-practice-forked-zs99yl"><img  src={iconCode} /></a>
                                         </div>
                                     </div>
+                                </div>
                                 </Tab.Pane>
                             
                         </Tab.Content>
