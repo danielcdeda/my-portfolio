@@ -4,6 +4,8 @@ import imagemProj1 from "../../assets/img/Imagem_Projeto1 (2).png"
 import imagemProj2 from "../../assets/img/Imagem-Projeto2.png"
 import imagemProj3 from "../../assets/img/Imagem-Projeto3.png"
 import imagemProj4 from "../../assets/img/Imagem-Projeto4.png"
+import imagemProj5 from "../../assets/img/Imagem-Projeto5.png"
+import imagemProj6 from "../../assets/img/Imagem-Projeto6.png"
 import iconCode from "../../assets/img/icon-code.png"
 
 
@@ -29,14 +31,14 @@ function Projects() {
         tecnologia: 'Tecnologias utilizadas: JavaScript, CSS, HTML.'
     },
     {
-        title: 'To do List',
-        content:'Aplicativo para registrar seus afazeres diários.',
-        tecnologia: 'Tecnologias utilizadas: React, CSS, HTML.'
+        title: 'Jogo da memória',
+        content:'Jogo para navegador com o mesmo funcionamento de um jogo da memória',
+        tecnologia: 'Tecnologias utilizadas: JavaScript, CSS, HTML.'
     },
     {
-        title: 'To do List',
-        content:'Aplicativo para registrar seus afazeres diários.',
-        tecnologia: 'Tecnologias utilizadas: React, CSS, HTML.'
+        title: 'Drum Kit',
+        content:'Simulação de um kit de bateria',
+        tecnologia: 'Tecnologias utilizadas: Javascript, CSS, HTML.'
     },
 ] 
     
@@ -48,7 +50,7 @@ function Projects() {
                 <Col>
                     <div className="projetos-box">
                         <h2 className="titulo-projetos">Projetos</h2>
-                        <p className="texto-projetos">Projetos realizados com as tecnologias que utilizo para desenvolver os meus sites.</p>
+                        <p className="texto-projetos">Alguns dos projetos realizados com as tecnologias que utilizo para desenvolver os meus sites.</p>
                         <Tab.Container id='projects-tabs' defaultActiveKey="first">
                         <Nav justify variant="tabs" defaultActiveKey="/home" className="tabs">
                             <Nav.Item>
@@ -127,13 +129,13 @@ function Projects() {
                                 <Tab.Pane eventKey='third'>
                                 <div className="container-projeto1">
                                     <div className="imagem">
-                                        <img src={imagemProj1} className="imagensProj" />
+                                        <img src={imagemProj5} className="imagensProj" />
                                     </div>
                                     <div className="texto">
-                                        <h3 className="itemh3" >{projetos[0].title}</h3>
+                                        <h3 className="itemh3" >{projetos[4].title}</h3>
                                         <div className="gradient" />
-                                        <p>{projetos[0].content}</p>
-                                        <p>{projetos[0].tecnologia}</p>
+                                        <p>{projetos[4].content}</p>
+                                        <p>{projetos[4].tecnologia}</p>
                                         <div className="iconCode">
                                         <a target="_blank" href="https://codesandbox.io/s/using-pre-built-react-components-forked-hc9l5w"><img  src={iconCode}/></a>
                                         </div>
@@ -141,14 +143,14 @@ function Projects() {
                                 </div>
                                 <div className="container-projeto2">
                                     <div className="imagem2">
-                                        <img src={imagemProj2} className="imagensProj" />
+                                        <img src={imagemProj6} className="imagensProj" />
                                     </div>
                                     <div className="texto texto2">
-                                        <h3 className="itemh3" >{projetos[1].title}</h3>
+                                        <h3 className="itemh3" >{projetos[5].title}</h3>
                                         <div className="gradient" />
-                                        <p> {projetos[1].content}</p>
+                                        <p> {projetos[5].content}</p>
                                         
-                                        <p>{projetos[1].tecnologia}</p>
+                                        <p>{projetos[5].tecnologia}</p>
                                         <div className="iconCode">
                                         <a target="_blank" href="https://codesandbox.io/s/es6-spread-operator-practice-forked-zs99yl"><img  src={iconCode} /></a>
                                         </div>
