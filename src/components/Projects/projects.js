@@ -1,6 +1,7 @@
 import { Container, Row, Col, Nav, Tab, Tabs } from "react-bootstrap";
 import './projects.css'
-import imagemProj1 from "../../assets/img/Imagem-Projeto2.png"
+import imagemProj1 from "../../assets/img/Imagem_Projeto1 (2).png"
+import iconCode from "../../assets/img/icon-code.png"
 
 
 function Projects() {
@@ -51,7 +52,11 @@ function Projects() {
                                     </div>
                                     <div className="texto">
                                         <h3 className="itemh3" >Keeper App</h3>
-                                        <p> Aplicativo utilizado para</p>
+                                        <div className="gradient" />
+                                        <p> Aplicativo utilizado para salvar notas, ideias ou qualquer coisa que lhe for útil.</p>
+                                        
+                                        <p>Tecnologias utilizadas: React, CSS, HTML.</p>
+                                        <a target="_blank" href="https://codesandbox.io/s/using-pre-built-react-components-forked-hc9l5w"><img  src={iconCode} className="iconCode"/></a>
                                     </div>
                                 </Tab.Pane>
                             </div>
