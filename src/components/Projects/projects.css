@@ -1,3 +1,4 @@
+
 .projetos {
     background-color: #000;
     height: 92vh;
@@ -62,8 +63,12 @@
 
 .container-projetos {
     display: flex;
-    margin-top: 50px;
-    display: relative;
+    margin-top: 70px;
+}
+
+.container-projeto1 {
+    margin-bottom: 45px;
+
 }
 
 .imagem {
@@ -82,6 +87,16 @@
     top: 10px;
 }
 
+.texto2 {
+    float: left;
+    left: 38.5%;
+}
+
+.imagem2 {
+    position: relative;
+    right: -38%;
+}
+
 .gradient {
     height: 1px;
     width: 250px;
@@ -90,18 +105,22 @@
 }
 
 .iconCode {
-    padding: 4px;
-    width: 32px;
-      background: rgba(217, 217, 217, 0.1);
-      display: inline-flex;
-      border-radius: 50%;
-      align-items: center;
-      justify-content: center;
-      line-height: 1;
-      border: 1px solid rgba(255, 255, 255, 0.5);
+    display: inline-block;
 }
 
-.iconCode::before {
+.iconCode a {
+    width: 42px;
+    height: 42px;
+    background: rgba(217, 217, 217, 0.1);
+    display: inline-flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.iconCode a::before {
     content: "";
     width: 42px;
     height: 42px;
@@ -112,7 +131,7 @@
     transition: 0.3s ease-in-out;
 }
 
-.iconCode:hover::before {
+.iconCode a:hover::before {
     transform: scale(1);
 }
 

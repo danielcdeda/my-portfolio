@@ -1,17 +1,20 @@
 import { Container, Row, Col, Nav, Tab, Tabs } from "react-bootstrap";
 import './projects.css'
 import imagemProj1 from "../../assets/img/Imagem_Projeto1 (2).png"
+import imagemProj2 from "../../assets/img/Imagem-Projeto2.png"
 import iconCode from "../../assets/img/icon-code.png"
 
 
 function Projects() {
     const projetos = [{
         title:'Keeper App',
-        content:'Site feito para armazenar relens',
+        content:' Aplicativo utilizado para salvar notas, ideias ou qualquer coisa que lhe for útil.',
+        tecnologia: 'Tecnologias utilizadas: React, CSS, HTML.',
     },    
     {
-        title: '',
-        content:'',
+        title: 'To do List',
+        content:'Aplicativo para registrar seus afazeres diários.',
+        tecnologia: 'Tecnologias utilizadas: React, CSS, HTML.'
     },
     {
         title: '',
@@ -47,37 +50,91 @@ function Projects() {
                         <Tab.Content>
                             <div className="container-projetos">
                                 <Tab.Pane eventKey='first' className="tab-pane active">
+                                <div className="container-projeto1">
                                     <div className="imagem">
                                         <img src={imagemProj1} className="imagensProj" />
                                     </div>
                                     <div className="texto">
-                                        <h3 className="itemh3" >Keeper App</h3>
+                                        <h3 className="itemh3" >{projetos[0].title}</h3>
                                         <div className="gradient" />
-                                        <p> Aplicativo utilizado para salvar notas, ideias ou qualquer coisa que lhe for útil.</p>
+                                        <p>{projetos[0].content}</p>
+                                        <p>{projetos[0].tecnologia}</p>
+                                        <div className="iconCode">
+                                        <a target="_blank" href="https://codesandbox.io/s/using-pre-built-react-components-forked-hc9l5w"><img  src={iconCode}/></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div className="imagem imagem2">
+                                        <img src={imagemProj2} className="imagensProj" />
+                                    </div>
+                                    <div className="texto texto2">
+                                        <h3 className="itemh3" >{projetos[1].title}</h3>
+                                        <div className="gradient" />
+                                        <p> {projetos[1].content}</p>
                                         
-                                        <p>Tecnologias utilizadas: React, CSS, HTML.</p>
-                                        <a target="_blank" href="https://codesandbox.io/s/using-pre-built-react-components-forked-hc9l5w"><img  src={iconCode} className="iconCode"/></a>
+                                        <p>{projetos[1].tecnologia}</p>
+                                        <div className="iconCode">
+                                        <a target="_blank" href="https://codesandbox.io/s/es6-spread-operator-practice-forked-zs99yl"><img  src={iconCode} /></a>
+                                        </div>
                                     </div>
                                 </Tab.Pane>
                             </div>
                                 <Tab.Pane eventKey='second'>
-                                    <div className="container-img-projeto2">
+                                <div className="container-projeto2">
+                                    <div className="imagem">
                                         <img src={imagemProj1} className="imagensProj" />
                                     </div>
-                                    <div className="container-texto-projeto2">
-                                        <h3 >
-                                            
-                                        </h3>
+                                    <div className="texto">
+                                        <h3 className="itemh3" >{projetos[0].title}</h3>
+                                        <div className="gradient" />
+                                        <p>{projetos[0].content}</p>
+                                        <p>{projetos[0].tecnologia}</p>
+                                        <div className="iconCode">
+                                        <a target="_blank" href="https://codesandbox.io/s/using-pre-built-react-components-forked-hc9l5w"><img  src={iconCode}/></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div className="imagem imagem2">
+                                        <img src={imagemProj2} className="imagensProj" />
+                                    </div>
+                                    <div className="texto texto2">
+                                        <h3 className="itemh3" >{projetos[1].title}</h3>
+                                        <div className="gradient" />
+                                        <p> {projetos[1].content}</p>
+                                        
+                                        <p>{projetos[1].tecnologia}</p>
+                                        <div className="iconCode">
+                                        <a target="_blank" href="https://codesandbox.io/s/es6-spread-operator-practice-forked-zs99yl"><img  src={iconCode} /></a>
+                                        </div>
                                     </div>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey='third'>
-                                    <div className="container-img-projeto3">
+                                <div className="container-projeto1">
+                                    <div className="imagem">
                                         <img src={imagemProj1} className="imagensProj" />
                                     </div>
-                                    <div className="container-texto-projeto3">
-                                        <h3>
-                                            Paoksepokaspoe
-                                        </h3>
+                                    <div className="texto">
+                                        <h3 className="itemh3" >{projetos[0].title}</h3>
+                                        <div className="gradient" />
+                                        <p>{projetos[0].content}</p>
+                                        <p>{projetos[0].tecnologia}</p>
+                                        <div className="iconCode">
+                                        <a target="_blank" href="https://codesandbox.io/s/using-pre-built-react-components-forked-hc9l5w"><img  src={iconCode}/></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div className="imagem imagem2">
+                                        <img src={imagemProj2} className="imagensProj" />
+                                    </div>
+                                    <div className="texto texto2">
+                                        <h3 className="itemh3" >{projetos[1].title}</h3>
+                                        <div className="gradient" />
+                                        <p> {projetos[1].content}</p>
+                                        
+                                        <p>{projetos[1].tecnologia}</p>
+                                        <div className="iconCode">
+                                        <a target="_blank" href="https://codesandbox.io/s/es6-spread-operator-practice-forked-zs99yl"><img  src={iconCode} /></a>
+                                        </div>
                                     </div>
                                 </Tab.Pane>
                             
