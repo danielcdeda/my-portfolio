@@ -1,11 +1,13 @@
 .contact {
     background-image: linear-gradient(to right, #fdc500, #ff7740, #d93a6b, #842d7d); 
-    padding: 60px 0 200px 0;
+    padding: 120px 0 285px 0;
   }
 
   .contact img {
-    width: 92%;
+    width: 100%;
   }
+
+
   .contact h2 {
     color: WHITE;
       font-size: 45px;
@@ -18,7 +20,7 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     color: #fff;
-    margin: 0 0 8px 0;
+    margin: 0 0 12px 0;
     padding: 18px 26px;
     font-weight: 500;
     font-size: 18px;

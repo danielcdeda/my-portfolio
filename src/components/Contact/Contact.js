@@ -1,6 +1,7 @@
 import './contact.css'
 import { useState } from "react";
 import {Container, Row, Col} from 'react-bootstrap'
+import imagemContato from "../../assets/img/Contato-img2.png"
 
 
 function Contact () {
@@ -48,10 +49,10 @@ function Contact () {
             <Container>
                 <Row className="align-items-center">
                     <Col size={12} md={6}>
-                        <img src={''} alt="Entre em contato!"/>
+                        <img src={imagemContato} alt="Entre em contato!"/>
                     </Col>
                     <Col size={12} md={6}>
-                        <h2>Entre em contato</h2>
+                        <h2>Entre em contato!</h2>
                         <form onSubmit={handleSubmit}>
                             <Row>
                                 <Col size={12} sm={6} className="px-1">
