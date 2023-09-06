@@ -137,7 +137,7 @@ function Projects() {
                                         <p>{projetos[4].content}</p>
                                         <p>{projetos[4].tecnologia}</p>
                                         <div className="iconCode">
-                                        <a target="_blank" href="https://codesandbox.io/s/using-pre-built-react-components-forked-hc9l5w"><img  src={iconCode}/></a>
+                                        <a target="_blank" href="https://github.com/danielcdeda/Jogo-da-memoria"><img  src={iconCode}/></a>
                                         </div>
                                     </div>
                                 </div>
@@ -152,7 +152,7 @@ function Projects() {
                                         
                                         <p>{projetos[5].tecnologia}</p>
                                         <div className="iconCode">
-                                        <a target="_blank" href="https://codesandbox.io/s/es6-spread-operator-practice-forked-zs99yl"><img  src={iconCode} /></a>
+                                        <a target="_blank" href="https://github.com/danielcdeda/Drum-kit"><img  src={iconCode} /></a>
                                         </div>
                                     </div>
                                 </div>
