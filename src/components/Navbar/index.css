@@ -177,3 +177,20 @@ nav.navbar {
       border-color: transparent;
   }
 
+@media (max-width: 991px) {
+    .image-logo {
+        width: 75%;
+    }
+    .buttonConnect {
+        display: none;
+    }
+    .navbar-collapse {
+        flex-direction: row-reverse;
+    }
+    .navbar-link.ml-auto {
+        margin-left: auto;
+    }
+    .social-icon {
+        margin-left: auto;
+    }
+}

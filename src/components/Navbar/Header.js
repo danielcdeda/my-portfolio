@@ -3,6 +3,8 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../../assets/img/logo-2.png';
 import navIcon1 from '../../assets/img/nav-icon1.svg';
 import navIcon2 from '../../assets/img/nav-icon2.svg';
+import { HashLink } from 'react-router-hash-link';
+import { BrowserRouter as Router } from 'react-router-dom';
 import '../Navbar/index.css'
 
 
@@ -25,6 +27,7 @@ function Header() {
     }
 
   return (
+    <Router>
     <Navbar expand="lg" className={isScrolled ? "scrolled" : ""}>
         <Container>
             <Navbar.Brand href="#home">
@@ -35,21 +38,24 @@ function Header() {
             </Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-                <Nav.Link href="#home" className={activeLink === "home" ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-                <Nav.Link href="#habilidades" className={activeLink === "habilidades" ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('habilidades')}>Habilidades</Nav.Link>
-                <Nav.Link href="#projetos" className={activeLink === "projetos" ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projetos')}>Projetos</Nav.Link>
+            <Nav.Link href="#home" className={`${activeLink === "home" ? "active navbar-link" : "navbar-link"} ml-auto`} onClick={() => onUpdateActiveLink("home")}> Home </Nav.Link>
+                <Nav.Link href="#habilidades" className={`${activeLink === "habilidades" ? 'active navbar-link' : 'navbar-link'} ml-auto`} onClick={() => onUpdateActiveLink('habilidades')}>Habilidades</Nav.Link>
+                <Nav.Link href="#projetos" className={`${activeLink === "projetos" ? 'active navbar-link' : 'navbar-link'} ml-auto`} onClick={() => onUpdateActiveLink('projetos')}>Projetos</Nav.Link>
             </Nav>
                 <span className='navbar-text'>
                     <div className='social-icon'>
-                        <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/daniel-d%C3%A9da/'><img src={navIcon1} alt='' /></a>
-                        <a target="_blank" rel="noopener noreferrer" href='https://github.com/danielcdeda' ><img className='github' src={navIcon2} alt='' /></a>
+                        <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/daniel-d%C3%A9da/'><img className='ml-auto' src={navIcon1} alt='' /></a>
+                        <a target="_blank" rel="noopener noreferrer" href='https://github.com/danielcdeda' ><img className='github ml-auto' src={navIcon2} alt='' /></a>
                     </div>
-                    <button className='buttonConnect' onClick={() => {console.log("working!")}}><span>Entre em contato!</span></button>
+                    <HashLink to='#connect'>
+                    <button className='buttonConnect'><span>Entre em contato!</span></button>
+                    </HashLink>
                 </span>
                 
             </Navbar.Collapse>
         </Container>
     </Navbar>
+    </Router>
   );
 }
 
