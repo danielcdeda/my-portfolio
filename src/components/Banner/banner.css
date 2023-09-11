@@ -9,11 +9,6 @@
     font-family: Centra;
   }
 
-.parte-texto {
-  position: relative;
-  top: 40px;
-  font-weight: 400;
-}
 
 .banner-img {
   position: relative;
@@ -76,4 +71,20 @@
   }
   .txt-rotate > .wrap {
     border-right: 0.08em solid #666;
+  }
+
+  @media (max-width: 991px) {
+    .col-imagem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .banner-img {
+      bottom: 0px;
+      top: 20px;
+    }
+    
+    .heading {
+      
+    }
   }

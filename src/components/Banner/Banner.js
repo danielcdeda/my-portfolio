@@ -52,7 +52,7 @@ function Banner() {
                         <p>Meu trabalho é desenvolver sites que proporcionam uma ótima experiência para os usuários c: </p>
                         <button onClick={() => console.log('connect')}>Fale comigo! <ArrowRightCircle size={25} /></button>
                     </Col>
-                    <Col cs={12} md={6} xl={5}>
+                    <Col cs={12} md={6} xl={5} className="col-imagem">
                         <img src={BannerImg} alt="Banner-img" className="banner-img"/>
                     </Col>
                 </Row>
