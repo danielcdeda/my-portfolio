@@ -25,10 +25,10 @@ function Contact () {
     }
 
     const handleSubmit = async (e) => {
-        e.prevenDefault();
+        e.preventDefault();
         setButtonText('Enviando...');
-        let response = await fetch("http://localhost:5000/contact", {
-            method: "Post",
+        let response = await fetch("http://localhost:3000/contact", {
+            method: "POST",
             headers: {
                 "Content-Type": "Application/json;charset=utf-8",
             },
