@@ -1,8 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap"
-import { ArrowRightCircle } from "react-bootstrap-icons"
+import { ArrowRightCircle, Hash } from "react-bootstrap-icons"
 import BannerImg from '../../assets/img/menino-note-final2.png'
 import { useEffect, useState } from "react"
 import './banner.css'
+import { HashLink } from "react-router-hash-link"
 
 
 function Banner() {
@@ -43,6 +44,13 @@ function Banner() {
 
     }
 
+    const scrollToContacts = () => {
+        const contactsElement = document.getElementById('connect');
+        if (contactsElement) {
+          contactsElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
     return (
         <section className="banner" id="home">
             <Container className="align-items-center">
@@ -50,7 +58,7 @@ function Banner() {
                     <Col xs={12} md={6} xl={7} className="parte-texto">
                         <h1 className="heading">{'Olá, eu sou Daniel! '}<span>{text}</span></h1>
                         <p>Meu trabalho é desenvolver sites que proporcionam uma ótima experiência para os usuários c: </p>
-                        <button onClick={() => console.log('connect')}>Fale comigo! <ArrowRightCircle size={25} /></button>
+                            <button onClick={scrollToContacts}>Fale comigo! <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col cs={12} md={6} xl={5} className="col-imagem">
                         <img src={BannerImg} alt="Banner-img" className="banner-img"/>
